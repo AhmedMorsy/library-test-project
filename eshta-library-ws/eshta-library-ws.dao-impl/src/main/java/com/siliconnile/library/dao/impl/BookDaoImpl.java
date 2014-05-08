@@ -32,7 +32,7 @@ public class BookDaoImpl extends BasicJpaDao<Book> implements BookDao {
        
     	
     	Query query = getEntityManager().createQuery("from Book bo where bo.title like :sParam or bo.author like :sParam");
-    	query.setParameter("sParam", searchParam);
+    	query.setParameter("sParam", searchParam  + "%");
         return (List<Book>) query.getResultList();
     }
     
