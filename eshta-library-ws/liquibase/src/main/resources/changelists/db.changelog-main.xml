@@ -5,6 +5,8 @@
 
 
     <include file="changelists/book.xml" />
-
+    <include file="changelists/reader.xml" />
+	<include file="changelists/book_reader.xml" />
+	
 </databaseChangeLog>
 
